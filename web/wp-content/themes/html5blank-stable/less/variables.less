@@ -1,0 +1,31 @@
+// Single primary color that all mixins use. Str8 ballin.
+@primary:        hsl(202, 100%, 50%);
+ 
+// Primary Variants -
+@primaryLight:   hsl(hue(@primary), 100%, 70%);
+@primaryDark:    hsl(hue(@primary), 60%, 40%);
+@primaryFaded:   hsl(hue(@primary), 60%, 65%);
+ 
+// 180degree Variants
+@variant:         spin((@primary), 180);
+@variantLight:    hsl(hue(@variant), 100%, 70%);
+@variantDark:     hsl(hue(@variant), 60%, 40%);
+@variantFaded:    hsl(hue(@variant), 60%, 65%);
+ 
+// 90degree Variants
+@corner:         spin((@primary), 70);
+@cornerLight:    hsl(hue(@corner), 100%, 70%);
+@cornerDark:     hsl(hue(@corner), 60%, 40%);
+@cornerFaded:    hsl(hue(@corner), 60%, 65%);
+
+@black: #000000;
+@darkColor:   #43443f;
+@greyLightColor:   #43443f;
+@activeMenuColor:   #978E7A;
+
+@screen-sm-min:  768px;
+@screen-md-min:  992px;
+@screen-lg-min:  1200px;  
+
+@desktop:   ~"only screen and (min-width: 992px)";
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 992px)";
