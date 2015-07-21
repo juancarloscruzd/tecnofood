@@ -12146,24 +12146,26 @@ body {
   src: local('Roboto Bold'), local('Roboto-Bold'), url(http://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-nav .container .row .nav-logo a {
-  display: block;
-  width: 83px;
-  height: 92px;
-  margin: 10px;
-  background: url(/dist/images/logo.png);
+.search-wrapper {
+  margin-top: 15px;
 }
-nav .container .row .nav-search {
-  padding-top: 35px;
+.search-wrapper .search input {
+  border: none;
+  background-color: #E2E1DF;
+  padding: 5px;
+  width: 200px;
 }
-nav .container .row .nav-user {
-  padding-top: 25px;
+.footer {
+  height: 100px;
+  background: #262525;
+  padding: 20px 0px 20px 0px;
 }
-nav .container .row .nav-user .nav-user-dropdown .navbar-nav {
-  margin-top: 10px;
+.footer .copyright {
+  text-align: center;
+  color: white;
 }
-nav .container .row .nav-user img {
-  border-radius: 30px;
+.navbar-fixed-top {
+  background: #fff;
 }
 /*
   Theme Name: HTML5 Blank
@@ -12195,8 +12197,9 @@ html {
   font-size: 62.5%;
 }
 body {
-  font: 300 11px/1.4 'Roboto', Helvetica, Arial, sans-serif;
+  font: 300 14px/1.4 'Roboto', Helvetica, Arial, sans-serif;
   color: #444;
+  padding-top: 70px;
 }
 /* clear */
 .clear:before,
@@ -12349,6 +12352,32 @@ a img.aligncenter {
   line-height: 17px;
   margin: 0;
   padding: 0 4px 5px;
+}
+form.search {
+  float: right;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
 }
 /*------------------------------------*\
     PRINT

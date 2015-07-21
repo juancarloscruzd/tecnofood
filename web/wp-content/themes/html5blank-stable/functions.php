@@ -70,10 +70,10 @@ function html5blank_nav()
 		'theme_location'  => 'header-menu',
 		'menu'            => '',
 		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
+		'container_class' => 'nav nav-bar',
+		'container_id'    => 'navbar',
 		'menu_class'      => 'menu',
-		'menu_id'         => '',
+		'menu_id'         => 'navbar',
 		'echo'            => true,
 		'fallback_cb'     => 'wp_page_menu',
 		'before'          => '',
@@ -132,10 +132,18 @@ function register_html5_menu()
     ));
 }
 
+// Removes ul class from wp_nav_menu
+function remove_ul ( $menu ){
+    return preg_replace( array( '#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );
+}
+add_filter( 'wp_nav_menu', 'remove_ul' );
+
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 function my_wp_nav_menu_args($args = '')
 {
     $args['container'] = false;
+    //$args['container_class'] = "nav-collapse collapse";
+    
     return $args;
 }
 

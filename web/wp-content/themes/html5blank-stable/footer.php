@@ -1,10 +1,16 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			
+
+		</div>
+		<!-- /wrapper -->
+		<div class="container-fluid">
+		<!-- footer -->
+			<footer class="footer row" role="contentinfo">
 
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					Tecnofod S.A.C. <br/>
+					Av. La Merced 119/123 Of. Miraflores, Lima 18 - Perú <br/>
+					Copyright &copy; <?php echo date('Y'); ?>  Tecnofod S.A.C. | Diseño por: FIRU SAYS
 				</p>
 				<!-- /copyright -->
 
@@ -12,9 +18,12 @@
 			<!-- /footer -->
 
 		</div>
-		<!-- /wrapper -->
+		
 
 		<?php wp_footer(); ?>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.js"></script>
 
 		<!-- analytics -->
 		<script>

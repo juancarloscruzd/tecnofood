@@ -44,8 +44,9 @@ html {
   font-size:62.5%;
 }
 body {
-  font:300 11px/1.4 'Roboto', Helvetica, Arial, sans-serif;
+  font:300 14px/1.4 'Roboto', Helvetica, Arial, sans-serif;
   color:#444;
+  padding-top: 70px;
 }
 /* clear */
 .clear:before,
@@ -264,6 +265,36 @@ a img.aligncenter {
 }
 .bypostauthor {
 
+}
+
+form.search{
+  float: right;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
 }
 
 /*------------------------------------*\

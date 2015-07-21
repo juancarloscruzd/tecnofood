@@ -4216,6 +4216,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/plugins\/disable-comments\/comments-template.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/disable-comments\/comments-template.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/disable-comments\/disable-comments.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/disable-comments\/disable-comments.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/plugins\/disable-comments\/uninstall.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/plugins\/disable-comments\/uninstall.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/plugins\/hello.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4341,6 +4368,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/slides\/slide1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 575781,
+		"inputAbbreviatedPath": "\/wp-content\/slides\/slide1.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/slides\/slide1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/slides\/slide2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 667392,
+		"inputAbbreviatedPath": "\/wp-content\/slides\/slide2.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/slides\/slide2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/html5blank-stable\/404.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4425,6 +4474,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/html5blank-stable\/example.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/example.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/themes\/html5blank-stable\/footer.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4470,6 +4528,17 @@
 		"initialSize": 15472,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/icons\/touch.png",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/icons\/touch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/html5blank-stable\/img\/logo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15739,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/logo.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/html5blank-stable\/img\/logo.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
