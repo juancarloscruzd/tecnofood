@@ -42,11 +42,14 @@
 /* html element 62.5% font-size for REM use */
 html {
   font-size:62.5%;
+  position: relative;
+  min-height: 100%;
 }
 body {
   font:300 14px/1.4 'Roboto', Helvetica, Arial, sans-serif;
   color:#444;
   padding-top: 70px;
+  margin-bottom: 100px;
 }
 /* clear */
 .clear:before,
@@ -116,7 +119,11 @@ input:focus {
 }
 /* footer */
 .footer {
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
 }
 
 /*------------------------------------*\

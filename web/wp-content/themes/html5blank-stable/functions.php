@@ -457,4 +457,17 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+
+function be_display_post_class( $classes, $post, $listing, $atts ) {
+    if( !isset( $atts['columns'] ) )
+        return $classes;
+        
+    $columns = array( '', '', 'one-half', 'col-md-4', 'col-md3', 'one-fifth', 'one-sixth' );
+    $classes[] = $columns[$atts['columns']];
+    if( 0 == $listing->current_post || 0 == $listing->current_post % $atts['columns'] )
+        $classes[] = 'first';
+    return $classes;
+}
+add_filter( 'display_posts_shortcode_post_class', 'be_display_post_class', 10, 4 );
+
 ?>
