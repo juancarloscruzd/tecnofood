@@ -3860,6 +3860,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
 }
+.nav > li.current-menu-item a {
+  text-decoration: none;
+  background-color: #36356e;
+  color: #eeeeee;
+}
 .nav > li > a {
   position: relative;
   display: block;
@@ -12448,4 +12453,20 @@ form.search {
   h3 {
     page-break-after: avoid;
   }
+}
+.display-posts-listing .listing-item .image {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.display-posts-listing .listing-item .title {
+  font-size: 16px;
+}
+.social {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.social li {
+  display: inline-block;
+  float: left;
+  padding-right: 10px;
 }

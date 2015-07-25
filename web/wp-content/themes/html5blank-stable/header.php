@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
@@ -51,9 +51,11 @@
               <ul class="nav navbar-nav">
                 <?php html5blank_nav(); ?>
               </ul>
-              <div class="col-md-1 pull-right">
-                FB TWT
-              </div>
+
+              <ul class="nav pull-right social">
+                <li><img src="/wp-content/images/social/facebook.png" alt=""></li>
+                <li><img src="/wp-content/images/social/twitter.png" alt=""></li>
+              </ul>
             </div>
           </div>
         </nav>
