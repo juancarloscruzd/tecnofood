@@ -48,7 +48,7 @@ html {
 body {
   font:300 14px/1.4 'Roboto', Helvetica, Arial, sans-serif;
   color:#444;
-  padding-top: 70px;
+  padding-top: 110px;
   margin-bottom: 100px;
 }
 /* clear */
@@ -301,7 +301,7 @@ form.search{
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  min-height: 100%;
 }
 
 /*------------------------------------*\
@@ -386,11 +386,15 @@ form.search{
 }
 
 .st-current-menu {
-      top: 45px;
-      bottom: 0px;
-      position: absolute;
-      //background-image: url('images/menu-gradient.png');
-      background-repeat: repeat-x;
-      background-color: @activeMenuColor; 
-      max-height: 50px;
-    }
+  top: 55px;
+  bottom: 0px;
+  position: absolute;
+  //background-image: url('images/menu-gradient.png');
+  background-repeat: repeat-x;
+  background-color: @activeMenuColor; 
+  max-height: 50px;
+}
+
+.top-bar{
+  padding-bottom: 10px;
+}

@@ -12171,6 +12171,8 @@ body {
 }
 .navbar-fixed-top {
   background: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 5px 15px -6px #eeeeee;
 }
 @media only screen and (min-width: 992px) {
   #navbar {
@@ -12216,7 +12218,7 @@ html {
 body {
   font: 300 14px/1.4 'Roboto', Helvetica, Arial, sans-serif;
   color: #444;
-  padding-top: 70px;
+  padding-top: 110px;
   margin-bottom: 100px;
 }
 /* clear */
@@ -12402,7 +12404,7 @@ form.search {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  min-height: 100%;
 }
 /*------------------------------------*\
     PRINT
@@ -12475,10 +12477,13 @@ form.search {
   padding-right: 10px;
 }
 .st-current-menu {
-  top: 45px;
+  top: 55px;
   bottom: 0px;
   position: absolute;
   background-repeat: repeat-x;
   background-color: #36356e;
   max-height: 50px;
+}
+.top-bar {
+  padding-bottom: 10px;
 }

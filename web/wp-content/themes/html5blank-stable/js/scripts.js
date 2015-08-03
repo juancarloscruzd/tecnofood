@@ -27,12 +27,14 @@
 
         sf_menu.children().hover(function(){
           //console.log('paso el menu en hover');
+          jQuery('.current_page_item').removeClass('current-menu-item');
           var left_pos = jQuery(this).position().left + parseInt(jQuery(this).css('padding-left'));
           //console.log(left_pos);
 
           sliding_bar.animate({ 'width':jQuery(this).width(), 'left': left_pos}, 
                               { queue: false, easing: 'easeOutQuad', duration: 250 });
         },function(){
+          jQuery('.current_page_item').addClass('current-menu-item');
           var left_pos = current_bar.position().left + parseInt(current_bar.css('padding-left'));
 
           sliding_bar.animate({ 'width':current_bar.width(), 'left': left_pos }, 
