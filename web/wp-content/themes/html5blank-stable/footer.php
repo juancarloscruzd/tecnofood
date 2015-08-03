@@ -10,7 +10,7 @@
 				<p class="copyright">
 					Tecnofod S.A.C. <br/>
 					Av. La Merced 119/123 Of. Miraflores, Lima 18 - Perú <br/>
-					Copyright &copy; <?php echo date('Y'); ?>  Tecnofod S.A.C. | Diseño por: FIRU SAYS
+					Copyright &copy; <?php echo date('Y'); ?>  Tecnofod S.A.C. | Diseño por: <a href="http://firusays.com" target="_blank" style="color:white; text-decoration:underline;">FIRU SAYS</a>
 				</p>
 				<!-- /copyright -->
 
