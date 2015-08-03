@@ -5,6 +5,29 @@
  *  Custom functions, support, custom post types and more.
  */
 
+
+/**
+ * Optional: set 'ot_show_pages' filter to false.
+ * This will hide the settings & documentation pages.
+ */
+add_filter( 'ot_show_pages', '__return_false' );
+
+/**
+ * Required: set 'ot_theme_mode' filter to true.
+ */
+add_filter( 'ot_theme_mode', '__return_true' );
+
+/**
+ * Required: include OptionTree.
+ */
+require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+
+/**
+ * Theme Options
+ */
+require( trailingslashit( get_template_directory() ) . 'theme-options.php' );
+require( trailingslashit( get_template_directory() ) . 'meta-boxes.php' );
+
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
@@ -97,6 +120,9 @@ function html5blank_header_scripts()
 
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
+
+        wp_register_script('jquery-easing', get_template_directory_uri() . '/js/lib/jquery.easing.1.3.js', array('jquery'), '1.3'); // Modernizr
+        wp_enqueue_script('jquery-easing'); // Enqueue it!
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
@@ -411,7 +437,7 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
+            'name' => __('Custom', 'html5blank'), // Rename these to suit
             'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
             'add_new' => __('Add New', 'html5blank'),
             'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),

@@ -24,44 +24,40 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-    <div class="navbar-wrapper">
+    <nav class="navbar navbar-fixed-top">
       <div class="container">
-        <nav class="navbar navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <!-- logo -->
-              <div class="logo">
-                <a href="<?php echo home_url(); ?>">
-                  <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-                  <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Logo" class="logo-img">
-                </a>
-              </div>
-              <!-- /logo -->
-            </div>
-            <div class="col-md-4 pull-right search-wrapper">
-              <?php get_template_part('searchform'); ?>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse pull-right">
-              <ul class="nav navbar-nav">
-                <?php html5blank_nav(); ?>
-              </ul>
-
-              <ul class="nav pull-right social">
-                <li><img src="/wp-content/images/social/facebook.png" alt=""></li>
-                <li><img src="/wp-content/images/social/twitter.png" alt=""></li>
-              </ul>
-            </div>
+        <div class="row">
+          <div class="navbar-header col-md-4 col-xs-12">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/logo.jpg" alt="Logo" class="logo-img">
+            </a>
           </div>
-        </nav>
-
-      </div>
-    </div>
+          
+          <div id="navbar" class="navbar-collapse collapse navbar-wrapper col-md-8 col-xs-12">
+            <div class="row">
+              <div class="col-md-12 hidden-sm hidden-xs pull-right search-wrapper">
+                <?php get_template_part('searchform'); ?>
+              </div>
+            </div>
+            <ul class="social pull-right hidden-xs hidden-sm">
+              <li><img src="/wp-content/images/social/facebook.png" alt=""></li>
+              <li><img src="/wp-content/images/social/twitter.png" alt=""></li>
+            </ul>
+            <div class="st-current-menu hidden-xs"></div>
+            <ul class="nav navbar-nav navbar-right">
+              <?php html5blank_nav(); ?>
+            </ul>
+          </div>
+          
+        </div>
+        </div>
+    </nav>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->

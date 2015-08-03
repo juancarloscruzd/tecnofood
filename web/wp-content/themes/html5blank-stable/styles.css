@@ -257,8 +257,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('fonts/glyphicons-halflings-regular.woff') format('woff'), url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -3862,7 +3862,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li.current-menu-item a {
   text-decoration: none;
-  background-color: #36356e;
   color: #eeeeee;
 }
 .nav > li > a {
@@ -3873,7 +3872,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #36356e;
+  background-color: transparent;
   color: #eeeeee;
 }
 .nav > li.disabled > a {
@@ -12178,6 +12177,11 @@ body {
     margin-top: 6px;
   }
 }
+.navbar-brand {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: auto !important;
+}
 /*
   Theme Name: HTML5 Blank
   Theme URI: http://html5blank.com
@@ -12469,4 +12473,12 @@ form.search {
   display: inline-block;
   float: left;
   padding-right: 10px;
+}
+.st-current-menu {
+  top: 45px;
+  bottom: 0px;
+  position: absolute;
+  background-repeat: repeat-x;
+  background-color: #36356e;
+  max-height: 50px;
 }
